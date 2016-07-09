@@ -3,10 +3,32 @@ Guide building project with mongodb
 #1. Setup
 	link guide: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/
 	Command sudo apt-get update. sudo apt-get install -y mongodb-org
+	Centos:
+		https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
+		update: sudo yum update
+		setting vim: sudo yum install -y vim
+		create a file repo: vim /etc/yum.repos.d/mongodb-org-3.2.repo
+		write file:
+			[mongodb-org-3.2]
+			name=MongoDB Repository
+			baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/x86_64/
+			gpgcheck=1
+			enabled=1
+			gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
+		
+			save and close: esc :wq
+			
+		setting db lastest: sudo yum install -y mongodb-org
 # 2. Command mongodb start
-	start: sudo service mongodb start
-	stop db: sudo service mongodb stop
-	reset db: sudo service mongodb restart
+	ubuntu:
+		start: sudo service mongodb start
+		stop db: sudo service mongodb stop
+		reset db: sudo service mongodb restart
+	centos:
+		start: sudo service mongod start
+		stop: sudo service mongod stop
+		reset: sudo service mongod reset
+	
 	use db: mongo
 # 3. User DB
 	- show all db
