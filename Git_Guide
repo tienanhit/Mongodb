@@ -5,5 +5,5 @@ Clone project
 1 So command git
   git branch
   git checkout <branch>
-  git pull <branch>
+ git pull origin <branch>
   git checkout --<filepath>
