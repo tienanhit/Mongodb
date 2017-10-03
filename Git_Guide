@@ -1,0 +1,9 @@
+Hướng dẫn cài git: Centos
+    sudo yum install -y git
+Clone project
+  git@bitbucket.org:tienanh1993/skydata.git
+1 So command git
+  git branch
+  git checkout <branch>
+  git pull <branch>
+  git checkout --<filepath>
