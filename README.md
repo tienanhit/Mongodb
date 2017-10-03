@@ -24,6 +24,9 @@ Guide building project with mongodb
 		start: sudo service mongodb start
 		stop db: sudo service mongodb stop
 		reset db: sudo service mongodb restart
+		//another
+		sudo systemctl start mongod
+		...
 	centos:
 		start: sudo service mongod start
 		stop: sudo service mongod stop
